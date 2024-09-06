@@ -1,16 +1,16 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 34.1.4">
+<meta name="generator" content="ReSpec 35.1.1">
 <style>
 dfn{cursor:pointer}
-.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
-.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
-.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
 .dfn-panel *{margin:0}
-.dfn-panel b{display:block;color:#000;margin-top:.25em}
-.dfn-panel ul a[href]{color:#333}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
 .dfn-panel>div{display:flex}
 .dfn-panel a.self-link{font-weight:700;margin-right:auto}
 .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
@@ -48,8 +48,6 @@ div.imageinfo.overview img {max-width: none;}
 25%{transform:scale(1.25,1.25);opacity:.75}
 100%{transform:scale(1,1)}
 }
-:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
-dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
 a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
 a.bibref{text-decoration:none}
@@ -63,20 +61,8 @@ a.bibref{text-decoration:none}
 cite .bibref{font-style:normal}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
-.toc a,.tof a{text-decoration:none}
-a .figno,a .secno{color:#000}
 ol.tof,ul.tof{list-style:none outside none}
 .caption{margin-top:.5em;font-style:italic}
-table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
-.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
-.simple th a{color:#fff;padding:3px 5px;text-align:left}
-.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
-.simple td{padding:3px 10px;border-top:1px solid #ddd}
-.simple tr:nth-child(even){background:#f0f6ff}
-.section dd>p:first-child{margin-top:0}
-.section dd>p:last-child{margin-bottom:0}
-.section dd{margin-bottom:1em}
-.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
 #issue-summary>ul{column-count:2}
 #issue-summary li{list-style:none;display:inline-block}
 details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
@@ -195,6 +181,7 @@ DSO.">
       "cv": "Candidate recommendation",
       "vv": "Proposed recommendation",
       "def": "Recommendation",
+      "ld": "Living document",
       "basis": "Document",
       "no": "Norm",
       "st": "Standard",
@@ -211,6 +198,7 @@ DSO.">
       "cv": "Consultatieversie",
       "vv": "Versie ter vaststelling",
       "def": "Vastgestelde versie",
+      "ld": "Levend document",
       "basis": "Document",
       "no": "Norm",
       "st": "Standaard",
@@ -230,7 +218,8 @@ DSO.">
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
       "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "basis": "Dit is een document zonder officiële status."
+      "basis": "Dit is een document zonder officiële status.",
+      "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
     },
     "en": {
       "sotd": "Status of this document",
@@ -238,7 +227,8 @@ DSO.">
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
       "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
-      "basis": "This document has no official standing."
+      "basis": "This document has no official standing.",
+      "ld": "This is a living document, which is updated regularly."
     }
   },
   "labelColor": {
@@ -246,7 +236,8 @@ DSO.">
     "wv": "#FF0000",
     "cv": "#045D9F",
     "vv": "#045D9F",
-    "basis": "#80CC28"
+    "basis": "#80CC28",
+    "ld": "#80CC28"
   },
   "licenses": {
     "cc0": {
@@ -313,6 +304,7 @@ DSO.">
   "title": "Conceptueel Informatiemodel Machtigen",
   "specStatus": "wv",
   "specType": "IM",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "pubDomain": "dso",
   "licence": "cc-by",
   "shortName": "dso-cim-mac",
@@ -338,7 +330,7 @@ DSO.">
     }
   ]
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
@@ -347,7 +339,7 @@ DSO.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2023-12-06">06 december 2023</time>
+      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
     </h2>
     <dl>
       
@@ -504,7 +496,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_NatuurlijkPersoon">
          <div class="header-wrapper"><h4 id="x5-2-1-natuurlijk-persoon"><bdi class="secno">5.2.1 </bdi>   Natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_NatuurlijkPersoon" aria-label="Permalink for Section 5.2.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -546,7 +538,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_NatuurlijkPersoon" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -575,7 +567,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Bevoegdheidsverklaring">
          <div class="header-wrapper"><h4 id="x5-2-2-bevoegdheidsverklaring"><bdi class="secno">5.2.2 </bdi>   Bevoegdheidsverklaring</h4><a class="self-link" href="#global_class_CIMMAC_Bevoegdheidsverklaring" aria-label="Permalink for Section 5.2.2"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -608,7 +600,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_ExternMachtigingenregister">
          <div class="header-wrapper"><h4 id="x5-2-3-extern-machtigingenregister"><bdi class="secno">5.2.3 </bdi>   Extern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_ExternMachtigingenregister" aria-label="Permalink for Section 5.2.3"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -649,7 +641,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_ExternMachtigingenregister" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -680,7 +672,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Machtigingsobject">
          <div class="header-wrapper"><h4 id="x5-2-4-machtigingsobject"><bdi class="secno">5.2.4 </bdi>   Machtigingsobject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for Section 5.2.4"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -724,7 +716,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -753,7 +745,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -783,7 +775,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_NietNatuurlijkPersoon">
          <div class="header-wrapper"><h4 id="x5-2-5-niet-natuurlijk-persoon"><bdi class="secno">5.2.5 </bdi>   Niet-natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_NietNatuurlijkPersoon" aria-label="Permalink for Section 5.2.5"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -830,7 +822,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_NietNatuurlijkPersoon" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -859,7 +851,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Machtiging">
          <div class="header-wrapper"><h4 id="x5-2-6-machtiging"><bdi class="secno">5.2.6 </bdi>   Machtiging</h4><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for Section 5.2.6"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -903,7 +895,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -972,7 +964,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1058,7 +1050,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Machtigingsverlener">
          <div class="header-wrapper"><h4 id="x5-2-7-machtigingsverlener"><bdi class="secno">5.2.7 </bdi>   Machtigingsverlener</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for Section 5.2.7"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1099,7 +1091,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1142,7 +1134,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Machtigingssubject">
          <div class="header-wrapper"><h4 id="x5-2-8-machtigingssubject"><bdi class="secno">5.2.8 </bdi>   Machtigingssubject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for Section 5.2.8"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1182,7 +1174,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1212,7 +1204,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Zaakmachtiging">
          <div class="header-wrapper"><h4 id="x5-2-9-zaakmachtiging"><bdi class="secno">5.2.9 </bdi>   Zaakmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for Section 5.2.9"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1252,7 +1244,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1281,7 +1273,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1310,7 +1302,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Gemachtigde">
          <div class="header-wrapper"><h4 id="x5-2-10-gemachtigde"><bdi class="secno">5.2.10 </bdi>   Gemachtigde</h4><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for Section 5.2.10"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1351,7 +1343,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1394,7 +1386,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Dienstmachtiging">
          <div class="header-wrapper"><h4 id="x5-2-11-dienstmachtiging"><bdi class="secno">5.2.11 </bdi>   Dienstmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for Section 5.2.11"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1435,7 +1427,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1464,7 +1456,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Machtigingregister">
          <div class="header-wrapper"><h4 id="x5-2-12-machtigingregister"><bdi class="secno">5.2.12 </bdi>   Machtigingregister</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingregister" aria-label="Permalink for Section 5.2.12"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1507,7 +1499,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-8">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingregister" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1537,7 +1529,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_Bevoedgheid">
          <div class="header-wrapper"><h4 id="x5-2-13-bevoedgheid"><bdi class="secno">5.2.13 </bdi>   Bevoedgheid</h4><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for Section 5.2.13"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1577,7 +1569,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-3">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1606,7 +1598,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-9">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1636,7 +1628,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMMAC_InternMachtigingenregister">
          <div class="header-wrapper"><h4 id="x5-2-14-intern-machtigingenregister"><bdi class="secno">5.2.14 </bdi>   Intern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_InternMachtigingenregister" aria-label="Permalink for Section 5.2.14"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1677,7 +1669,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-10">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_InternMachtigingenregister" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1708,7 +1700,7 @@ dataspecificatie.</p>
    <section id="enumeraties">
       <div class="header-wrapper"><h3 id="x5-3-enumeraties"><bdi class="secno">5.3 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.3"></a></div>
       
-      <table style="width: 100%;" class="simple">
+      <table style="width: 100%;">
          <colgroup style="width: 30%;"></colgroup>
          <colgroup style="width: 70%;"></colgroup>
          <tbody>
@@ -1755,7 +1747,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtigingsobject_identificatie">
                <div class="header-wrapper"><h6 id="x5-4-1-1-1-attribuutsoort-details-machtigingsobject-identificatie"><bdi class="secno">5.4.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie" aria-label="Permalink for Section 5.4.1.1.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1810,7 +1802,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtiging_geldigTot">
                <div class="header-wrapper"><h6 id="x5-4-1-2-1-attribuutsoort-details-machtiging-geldig-tot"><bdi class="secno">5.4.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig tot</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigTot" aria-label="Permalink for Section 5.4.1.2.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1860,7 +1852,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtiging_geldigVan">
                <div class="header-wrapper"><h6 id="x5-4-1-2-2-attribuutsoort-details-machtiging-geldig-van"><bdi class="secno">5.4.1.2.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig van</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigVan" aria-label="Permalink for Section 5.4.1.2.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1910,7 +1902,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtiging_identificatie">
                <div class="header-wrapper"><h6 id="x5-4-1-2-3-attribuutsoort-details-machtiging-identificatie"><bdi class="secno">5.4.1.2.3 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_identificatie" aria-label="Permalink for Section 5.4.1.2.3"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1960,7 +1952,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtiging_soort">
                <div class="header-wrapper"><h6 id="x5-4-1-2-4-attribuutsoort-details-machtiging-soort"><bdi class="secno">5.4.1.2.4 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> soort</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_soort" aria-label="Permalink for Section 5.4.1.2.4"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2010,7 +2002,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtiging_type">
                <div class="header-wrapper"><h6 id="x5-4-1-2-5-attribuutsoort-details-machtiging-type"><bdi class="secno">5.4.1.2.5 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> type</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_type" aria-label="Permalink for Section 5.4.1.2.5"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2061,7 +2053,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-4-1-2-6-relatiesoort-details-machtiging-geeft"><bdi class="secno">5.4.1.2.6 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geeft</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geeft" aria-label="Permalink for Section 5.4.1.2.6"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2087,7 +2079,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-4-1-2-7-relatiesoort-details-machtiging-krijgt-bevoegdheden-overgedragen"><bdi class="secno">5.4.1.2.7 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> krijgt bevoegdheden overgedragen</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen" aria-label="Permalink for Section 5.4.1.2.7"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2113,7 +2105,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-4-1-2-8-relatiesoort-details-machtiging-heeft-betrekking-op"><bdi class="secno">5.4.1.2.8 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> heeft betrekking op</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_heeftBetrekkingOp" aria-label="Permalink for Section 5.4.1.2.8"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2139,7 +2131,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-4-1-2-9-relatiesoort-details-machtiging-geregistreerd-in"><bdi class="secno">5.4.1.2.9 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geregistreerd in</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geregistreerdIn" aria-label="Permalink for Section 5.4.1.2.9"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2165,7 +2157,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-4-1-2-10-relatiesoort-details-machtiging-draagt-bevoegdheden-over"><bdi class="secno">5.4.1.2.10 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> draagt bevoegdheden over</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver" aria-label="Permalink for Section 5.4.1.2.10"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2195,7 +2187,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Machtigingssubject_actor">
                <div class="header-wrapper"><h6 id="x5-4-1-3-1-attribuutsoort-details-machtigingssubject-actor"><bdi class="secno">5.4.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a> actor</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingssubject_actor" aria-label="Permalink for Section 5.4.1.3.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2249,7 +2241,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Zaakmachtiging_projectId">
                <div class="header-wrapper"><h6 id="x5-4-1-4-1-attribuutsoort-details-zaakmachtiging-project-id"><bdi class="secno">5.4.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Zaakmachtiging">Zaakmachtiging</a> project-id</h6><a class="self-link" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectId" aria-label="Permalink for Section 5.4.1.4.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2306,7 +2298,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMMAC_Bevoedgheid_rechten">
                <div class="header-wrapper"><h6 id="x5-4-1-5-1-attribuutsoort-details-bevoedgheid-rechten"><bdi class="secno">5.4.1.5.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a> rechten</h6><a class="self-link" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten" aria-label="Permalink for Section 5.4.1.5.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2368,7 +2360,7 @@ dataspecificatie.</p>
    <section id="detail_class_CIMMAC_Machtiningsoort">
       <div class="header-wrapper"><h3 id="x6-1-enumeratie-details-machtiningsoort"><bdi class="secno">6.1 </bdi>Enumeratie details  Machtiningsoort</h3><a class="self-link" href="#detail_class_CIMMAC_Machtiningsoort" aria-label="Permalink for Section 6.1"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2380,7 +2372,7 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2423,7 +2415,7 @@ dataspecificatie.</p>
    <section id="detail_class_CIMMAC_Recht">
       <div class="header-wrapper"><h3 id="x6-2-enumeratie-details-recht"><bdi class="secno">6.2 </bdi>Enumeratie details  Recht</h3><a class="self-link" href="#detail_class_CIMMAC_Recht" aria-label="Permalink for Section 6.2"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2435,7 +2427,7 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2484,7 +2476,7 @@ dataspecificatie.</p>
    <section id="detail_class_CIMMAC_Actor">
       <div class="header-wrapper"><h3 id="x6-3-enumeratie-details-actor"><bdi class="secno">6.3 </bdi>Enumeratie details  Actor</h3><a class="self-link" href="#detail_class_CIMMAC_Actor" aria-label="Permalink for Section 6.3"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2496,7 +2488,7 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2545,7 +2537,7 @@ dataspecificatie.</p>
    <section id="detail_class_CIMMAC_Machtigingtype">
       <div class="header-wrapper"><h3 id="x6-4-enumeratie-details-machtigingtype"><bdi class="secno">6.4 </bdi>Enumeratie details  Machtigingtype</h3><a class="self-link" href="#detail_class_CIMMAC_Machtigingtype" aria-label="Permalink for Section 6.4"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2557,7 +2549,7 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
