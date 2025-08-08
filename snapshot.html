@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.3.0">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -58,7 +58,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -86,8 +86,9 @@ dd{margin-left:0}
 }
 </style>
 <style id="respec-nlgov">
-img.license{float:left;padding-right:5px}
+img.license{float:left;padding-right:5px;background:0 0}
 </style>
+<meta name="color-scheme" content="light">
 <style>
 ul.index{columns:30ch;column-gap:1.5em}
 ul.index li{list-style:inherit}
@@ -126,6 +127,7 @@ DSO.">
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
   "logos": [
     {
@@ -216,7 +218,7 @@ DSO.">
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
@@ -225,7 +227,7 @@ DSO.">
       "sotd": "Status of this document",
       "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
-      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
@@ -304,7 +306,6 @@ DSO.">
   "title": "Conceptueel Informatiemodel Machtigen",
   "specStatus": "wv",
   "specType": "IM",
-  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "pubDomain": "dso",
   "licence": "cc-by",
   "shortName": "dso-cim-mac",
@@ -339,7 +340,7 @@ DSO.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
+      <time class="dt-published" datetime="2025-08-08">08 augustus 2025</time>
     </h2>
     <dl>
       
@@ -375,15 +376,15 @@ DSO.">
           <a rel="alternate" href="dso-cim-mac.pdf">pdf</a>
         </p>
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het 'Conceptueel Informatiemodel Machtigen'. Dit is een conceptueel model van het
 DSO.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">4. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">5. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_E978A52A_7801_4b47_9E3E_E67A041827AB"><bdi class="secno">5.1 </bdi>   CIM-MAC - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">5.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_NatuurlijkPersoon"><bdi class="secno">5.2.1 </bdi>   Natuurlijk persoon</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Bevoegdheidsverklaring"><bdi class="secno">5.2.2 </bdi>   Bevoegdheidsverklaring</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_ExternMachtigingenregister"><bdi class="secno">5.2.3 </bdi>   Extern machtigingenregister</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingsobject"><bdi class="secno">5.2.4 </bdi>   Machtigingsobject</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_NietNatuurlijkPersoon"><bdi class="secno">5.2.5 </bdi>   Niet-natuurlijk persoon</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtiging"><bdi class="secno">5.2.6 </bdi>   Machtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingsverlener"><bdi class="secno">5.2.7 </bdi>   Machtigingsverlener</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingssubject"><bdi class="secno">5.2.8 </bdi>   Machtigingssubject</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Zaakmachtiging"><bdi class="secno">5.2.9 </bdi>   Zaakmachtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Gemachtigde"><bdi class="secno">5.2.10 </bdi>   Gemachtigde</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Dienstmachtiging"><bdi class="secno">5.2.11 </bdi>   Dienstmachtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingregister"><bdi class="secno">5.2.12 </bdi>   Machtigingregister</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Bevoedgheid"><bdi class="secno">5.2.13 </bdi>   Bevoedgheid</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_InternMachtigingenregister"><bdi class="secno">5.2.14 </bdi>   Intern machtigingenregister</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">5.3 </bdi>Enumeraties   </a></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">5.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">5.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingsobject"><bdi class="secno">5.4.1.1 </bdi>   Machtigingsobject</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie"><bdi class="secno">5.4.1.1.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtigingsobject</span> identificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtiging"><bdi class="secno">5.4.1.2 </bdi>   Machtiging</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_geldigTot"><bdi class="secno">5.4.1.2.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> geldig tot</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_geldigVan"><bdi class="secno">5.4.1.2.2 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> geldig van</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_identificatie"><bdi class="secno">5.4.1.2.3 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_soort"><bdi class="secno">5.4.1.2.4 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> soort</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_type"><bdi class="secno">5.4.1.2.5 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> type</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_geeft"><bdi class="secno">5.4.1.2.6 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> geeft</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen"><bdi class="secno">5.4.1.2.7 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> krijgt bevoegdheden overgedragen</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_heeftBetrekkingOp"><bdi class="secno">5.4.1.2.8 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> heeft betrekking op</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_geregistreerdIn"><bdi class="secno">5.4.1.2.9 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> geregistreerd in</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver"><bdi class="secno">5.4.1.2.10 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> draagt bevoegdheden over</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingssubject"><bdi class="secno">5.4.1.3 </bdi>   Machtigingssubject</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtigingssubject_actor"><bdi class="secno">5.4.1.3.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtigingssubject</span> actor</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Zaakmachtiging"><bdi class="secno">5.4.1.4 </bdi>   Zaakmachtiging</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectId"><bdi class="secno">5.4.1.4.1 </bdi>Attribuutsoort details  <span class="formerLink">Zaakmachtiging</span> project-id</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Bevoedgheid"><bdi class="secno">5.4.1.5 </bdi>   Bevoedgheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten"><bdi class="secno">5.4.1.5.1 </bdi>Attribuutsoort details  <span class="formerLink">Bevoedgheid</span> rechten</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">6. </bdi>Inhoud van waardenlijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtiningsoort"><bdi class="secno">6.1 </bdi>Enumeratie details  Machtiningsoort</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Recht"><bdi class="secno">6.2 </bdi>Enumeratie details  Recht</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Actor"><bdi class="secno">6.3 </bdi>Enumeratie details  Actor</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingtype"><bdi class="secno">6.4 </bdi>Enumeratie details  Machtigingtype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">8. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">4. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">5. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_E978A52A_7801_4b47_9E3E_E67A041827AB"><bdi class="secno">5.1 </bdi>   CIM-MAC - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">5.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Natuurlijkpersoon"><bdi class="secno">5.2.1 </bdi>   Natuurlijk persoon</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Bevoegdheidsverklaring"><bdi class="secno">5.2.2 </bdi>   Bevoegdheidsverklaring</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Externmachtigingenregister"><bdi class="secno">5.2.3 </bdi>   Extern machtigingenregister</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingsobject"><bdi class="secno">5.2.4 </bdi>   Machtigingsobject</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Nietnatuurlijkpersoon"><bdi class="secno">5.2.5 </bdi>   Niet-natuurlijk persoon</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtiging"><bdi class="secno">5.2.6 </bdi>   Machtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingsverlener"><bdi class="secno">5.2.7 </bdi>   Machtigingsverlener</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingssubject"><bdi class="secno">5.2.8 </bdi>   Machtigingssubject</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Zaakmachtiging"><bdi class="secno">5.2.9 </bdi>   Zaakmachtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Gemachtigde"><bdi class="secno">5.2.10 </bdi>   Gemachtigde</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Dienstmachtiging"><bdi class="secno">5.2.11 </bdi>   Dienstmachtiging</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingregister"><bdi class="secno">5.2.12 </bdi>   Machtigingregister</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Bevoedgheid"><bdi class="secno">5.2.13 </bdi>   Bevoedgheid</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Internmachtigingenregister"><bdi class="secno">5.2.14 </bdi>   Intern machtigingenregister</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">5.3 </bdi>Enumeraties   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtiningsoort"><bdi class="secno">5.3.1 </bdi>Enumeratie   Machtiningsoort</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Recht"><bdi class="secno">5.3.2 </bdi>Enumeratie   Recht</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Actor"><bdi class="secno">5.3.3 </bdi>Enumeratie   Actor</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMMAC_Machtigingtype"><bdi class="secno">5.3.4 </bdi>Enumeratie   Machtigingtype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">5.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">5.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingsobject"><bdi class="secno">5.4.1.1 </bdi>   Machtigingsobject</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie"><bdi class="secno">5.4.1.1.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtigingsobject</span> identificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtiging"><bdi class="secno">5.4.1.2 </bdi>   Machtiging</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_geldigtot"><bdi class="secno">5.4.1.2.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> geldig tot</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_geldigvan"><bdi class="secno">5.4.1.2.2 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> geldig van</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_identificatie"><bdi class="secno">5.4.1.2.3 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_soort"><bdi class="secno">5.4.1.2.4 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> soort</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtiging_type"><bdi class="secno">5.4.1.2.5 </bdi>Attribuutsoort details  <span class="formerLink">Machtiging</span> type</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_geeft"><bdi class="secno">5.4.1.2.6 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> geeft</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_krijgtbevoegdhedenovergedragen"><bdi class="secno">5.4.1.2.7 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> krijgt bevoegdheden overgedragen</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_heeftbetrekkingop"><bdi class="secno">5.4.1.2.8 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> heeft betrekking op</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_geregistreerdin"><bdi class="secno">5.4.1.2.9 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> geregistreerd in</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMMAC_Machtiging_draagtbevoegdhedenover"><bdi class="secno">5.4.1.2.10 </bdi>Relatiesoort details  <span class="formerLink">Machtiging</span> draagt bevoegdheden over</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingssubject"><bdi class="secno">5.4.1.3 </bdi>   Machtigingssubject</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Machtigingssubject_actor"><bdi class="secno">5.4.1.3.1 </bdi>Attribuutsoort details  <span class="formerLink">Machtigingssubject</span> actor</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Zaakmachtiging"><bdi class="secno">5.4.1.4 </bdi>   Zaakmachtiging</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectid"><bdi class="secno">5.4.1.4.1 </bdi>Attribuutsoort details  <span class="formerLink">Zaakmachtiging</span> project-id</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Bevoedgheid"><bdi class="secno">5.4.1.5 </bdi>   Bevoedgheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten"><bdi class="secno">5.4.1.5.1 </bdi>Attribuutsoort details  <span class="formerLink">Bevoedgheid</span> rechten</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">6. </bdi>Inhoud van waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtiningsoort"><bdi class="secno">6.1 </bdi>Enumeratie details  Machtiningsoort</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Recht"><bdi class="secno">6.2 </bdi>Enumeratie details  Recht</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Actor"><bdi class="secno">6.3 </bdi>Enumeratie details  Actor</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMMAC_Machtigingtype"><bdi class="secno">6.4 </bdi>Enumeratie details  Machtigingtype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">8. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   <section id="voorwoord"><div class="header-wrapper"><h2 id="x1-voorwoord"><bdi class="secno">1. </bdi>Voorwoord</h2><a class="self-link" href="#voorwoord" aria-label="Permalink for Section 1."></a></div>
 <p>Dit document is tot stand gekomen binnen het programma  DSO-Omgegevingswet. Het bevat de formele vastlegging en beschrijving van het Conceptuele Informatiemodel.</p>
@@ -472,2118 +473,576 @@ dataspecificatie.</p>
 </section></section>
 
   
-  
-<section id="cat" class="normative">
-   <div class="header-wrapper"><h2 id="x5-gegevensdefinitie"><bdi class="secno">5. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 5."></a></div>
-   
-   <section id="EAID_E978A52A_7801_4b47_9E3E_E67A041827AB">
-      <div class="header-wrapper"><h3 id="x5-1-cim-mac-overzicht"><bdi class="secno">5.1 </bdi>   CIM-MAC - overzicht</h3><a class="self-link" href="#EAID_E978A52A_7801_4b47_9E3E_E67A041827AB" aria-label="Permalink for Section 5.1"></a></div>
-      <div class="imageinfo overview">
-         <figure id="fig-cim-mac"><img src="data/Images/EAID_E978A52A_7801_4b47_9E3E_E67A041827AB.png" usemap="#imagemap-EAID_E978A52A_7801_4b47_9E3E_E67A041827AB" alt="Diagram 
-                        Dit conceptuele informatiemodel (CIM) heeft betrekking op machtingen. Hieronder verstaan we het toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de gemachtigde.
-                     "><figcaption><a class="self-link" href="#fig-cim-mac">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">CIM-MAC</span></figcaption>
-         </figure><map name="imagemap-EAID_E978A52A_7801_4b47_9E3E_E67A041827AB"><area shape="rect" alt="" coords="724,861,899,1036" href="#global_class_CIMMAC_Actor"><area shape="rect" alt="Niet-natuurlijk persoon" coords="1312,451,1449,560" href="#global_class_CIMMAC_NietNatuurlijkPersoon"><area shape="rect" alt="Natuurlijk persoon" coords="1134,451,1271,560" href="#global_class_CIMMAC_NatuurlijkPersoon"><area shape="rect" alt="Machtigingsobject" coords="96,478,343,588" href="#global_class_CIMMAC_Machtigingsobject"><area shape="rect" alt="Machtigingssubject" coords="1216,232,1353,342" href="#global_class_CIMMAC_Machtigingssubject"><area shape="rect" alt="Intern machtigingenregister" coords="82,14,232,123" href="#global_class_CIMMAC_InternMachtigingenregister"><area shape="rect" alt="Extern machtigingenregister" coords="793,14,943,123" href="#global_class_CIMMAC_ExternMachtigingenregister"><area shape="rect" alt="" coords="14,861,277,1036" href="#global_class_CIMMAC_Recht"><area shape="rect" alt="Gemachtigde" coords="916,178,1052,287" href="#global_class_CIMMAC_Gemachtigde"><area shape="rect" alt="Machtigingsverlener" coords="916,301,1052,410" href="#global_class_CIMMAC_Machtigingsverlener"><area shape="rect" alt="" coords="560,861,697,983" href="#global_class_CIMMAC_Machtigingtype"><area shape="rect" alt="" coords="301,861,534,1018" href="#global_class_CIMMAC_Machtiningsoort"><area shape="rect" alt="Bevoedgheid" coords="396,478,653,588" href="#global_class_CIMMAC_Bevoedgheid"><area shape="rect" alt="Machtiging" coords="396,205,644,380" href="#global_class_CIMMAC_Machtiging"><area shape="rect" alt="Dienstmachtiging" coords="260,712,396,821" href="#global_class_CIMMAC_Dienstmachtiging"><area shape="rect" alt="Machtigingregister" coords="451,14,588,123" href="#global_class_CIMMAC_Machtigingregister"><area shape="rect" alt="Zaakmachtiging" coords="27,712,235,821" href="#global_class_CIMMAC_Zaakmachtiging"></map><p>
-            
-            </p><p>Dit conceptuele informatiemodel (CIM) heeft betrekking op machtingen. Hieronder verstaan
-               we het toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de
-               gemachtigde.</p>
-            <p></p>
-      </div>
-   </section>
-   <section id="objecttypen">
-      <div class="header-wrapper"><h3 id="x5-2-objecttypen"><bdi class="secno">5.2 </bdi>Objecttypen   </h3><a class="self-link" href="#objecttypen" aria-label="Permalink for Section 5.2"></a></div>
-      
-      <section id="global_class_CIMMAC_NatuurlijkPersoon">
-         <div class="header-wrapper"><h4 id="x5-2-1-natuurlijk-persoon"><bdi class="secno">5.2.1 </bdi>   Natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_NatuurlijkPersoon" aria-label="Permalink for Section 5.2.1"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Natuurlijk persoon</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Een natuurlijk persoon is een menselijk individu dat, behoudens gebleken handelingsonbekwaamheid,
-                        in juridische zin drager van rechten en verplichtingen is.</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_NatuurlijkPersoon" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Natuurlijk persoon
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Bevoegdheidsverklaring">
-         <div class="header-wrapper"><h4 id="x5-2-2-bevoegdheidsverklaring"><bdi class="secno">5.2.2 </bdi>   Bevoegdheidsverklaring</h4><a class="self-link" href="#global_class_CIMMAC_Bevoegdheidsverklaring" aria-label="Permalink for Section 5.2.2"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Bevoegdheidsverklaring</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      
-      <section id="global_class_CIMMAC_ExternMachtigingenregister">
-         <div class="header-wrapper"><h4 id="x5-2-3-extern-machtigingenregister"><bdi class="secno">5.2.3 </bdi>   Extern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_ExternMachtigingenregister" aria-label="Permalink for Section 5.2.3"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Extern machtigingenregister</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Registratie binnen de e­Overheid</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_ExternMachtigingenregister" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Extern machtigingenregister
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor
-                        afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee
-                        machtigingen kunnen worden gecontroleerd op geldigheid.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Machtigingsobject">
-         <div class="header-wrapper"><h4 id="x5-2-4-machtigingsobject"><bdi class="secno">5.2.4 </bdi>   Machtigingsobject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for Section 5.2.4"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Machtigingsobject</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Definieert de scope van de machtiging</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Unieke aanduiding</th>
-                  <td>identificatie</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie">identificatie</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtiging">Machtiging</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_heeftBetrekkingOp">heeft betrekking op</a>
-                     
-                     Machtigingsobject
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_NietNatuurlijkPersoon">
-         <div class="header-wrapper"><h4 id="x5-2-5-niet-natuurlijk-persoon"><bdi class="secno">5.2.5 </bdi>   Niet-natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_NietNatuurlijkPersoon" aria-label="Permalink for Section 5.2.5"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Niet-natuurlijk persoon</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. </p>
-                     
-                     <p>Een samenwerkingsverband zonder rechtspersoonlijkheid is een rechtsvorm behorend bij
-                        een georganiseerde groep van natuurlijke personen en/of rechtspersonen die zelf niet
-                        in het recht is erkend als drager van wettelijke rechten en plichten.
-                        Voorbeelden van samenwerkingsverbanden zonder rechtspersoonlijkheid zijn de maatschap,
-                        de vennootschap onder firma (vof) en de commanditaire vennootschap (cv).</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_NietNatuurlijkPersoon" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Niet-natuurlijk persoon
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Machtiging">
-         <div class="header-wrapper"><h4 id="x5-2-6-machtiging"><bdi class="secno">5.2.6 </bdi>   Machtiging</h4><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for Section 5.2.6"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Machtiging</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de gemachtigde</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Unieke aanduiding</th>
-                  <td>identificatie</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtiging_geldigTot">geldig tot</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Date</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtiging_geldigVan">geldig van</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Date</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtiging_identificatie">identificatie</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtiging_soort">soort</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMMAC_Machtiningsoort">Machtiningsoort</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtiging_type">type</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMMAC_Machtigingtype">Machtigingtype</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Machtiging
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_geeft">geeft</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Machtiging
-                     [ 1 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen">krijgt bevoegdheden overgedragen</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMMAC_Gemachtigde">Gemachtigde</a>
-                     
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Machtiging
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_heeftBetrekkingOp">heeft betrekking op</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Machtiging
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_geregistreerdIn">geregistreerd in</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Machtiging
-                     [ 1 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver">draagt bevoegdheden over</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingsverlener">Machtigingsverlener</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Machtigingsverlener">
-         <div class="header-wrapper"><h4 id="x5-2-7-machtigingsverlener"><bdi class="secno">5.2.7 </bdi>   Machtigingsverlener</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for Section 5.2.7"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Machtigingsverlener</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Degene die bevoegdheden overdraagt</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtiging">Machtiging</a>
-                     
-                     [ 1 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver">draagt bevoegdheden over</a>
-                     
-                     Machtigingsverlener
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Machtigingsverlener
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Machtigingssubject">
-         <div class="header-wrapper"><h4 id="x5-2-8-machtigingssubject"><bdi class="secno">5.2.8 </bdi>   Machtigingssubject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for Section 5.2.8"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Machtigingssubject</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Machtigingssubject_actor">actor</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMMAC_Actor">Actor</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Zaakmachtiging">
-         <div class="header-wrapper"><h4 id="x5-2-9-zaakmachtiging"><bdi class="secno">5.2.9 </bdi>   Zaakmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for Section 5.2.9"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Zaakmachtiging</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Een enkelvoudig proces of processtap (bezwaar, case management)</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectId">project-id</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Zaakmachtiging
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>Definieert de scope van de machtiging</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Gemachtigde">
-         <div class="header-wrapper"><h4 id="x5-2-10-gemachtigde"><bdi class="secno">5.2.10 </bdi>   Gemachtigde</h4><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for Section 5.2.10"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Gemachtigde</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Degene die in de plaats van de machtigingsverlener namens diegene handelt</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtiging">Machtiging</a>
-                     
-                     [ 1 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen">krijgt bevoegdheden overgedragen</a>
-                     
-                     Gemachtigde
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Gemachtigde
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Dienstmachtiging">
-         <div class="header-wrapper"><h4 id="x5-2-11-dienstmachtiging"><bdi class="secno">5.2.11 </bdi>   Dienstmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for Section 5.2.11"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Dienstmachtiging</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Onveranderlijke set van activiteiten met een eindresultaat</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Dienstmachtiging
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>Definieert de scope van de machtiging</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Machtigingregister">
-         <div class="header-wrapper"><h4 id="x5-2-12-machtigingregister"><bdi class="secno">5.2.12 </bdi>   Machtigingregister</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingregister" aria-label="Permalink for Section 5.2.12"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Machtigingregister</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor
-                        afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee
-                        machtigingen kunnen worden gecontroleerd op geldigheid.</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-8">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingregister" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtiging">Machtiging</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_geregistreerdIn">geregistreerd in</a>
-                     
-                     Machtigingregister
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_Bevoedgheid">
-         <div class="header-wrapper"><h4 id="x5-2-13-bevoedgheid"><bdi class="secno">5.2.13 </bdi>   Bevoedgheid</h4><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for Section 5.2.13"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Bevoedgheid</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Definieert de bevoegdheid die voorkomt uit de machtiging.</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-3">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten">rechten</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMMAC_Recht">Recht</a>
-                     </td>
-                  <td>1 .. *</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-9">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtiging">Machtiging</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMMAC_Machtiging_geeft">geeft</a>
-                     
-                     Bevoedgheid
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMMAC_InternMachtigingenregister">
-         <div class="header-wrapper"><h4 id="x5-2-14-intern-machtigingenregister"><bdi class="secno">5.2.14 </bdi>   Intern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_InternMachtigingenregister" aria-label="Permalink for Section 5.2.14"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Intern machtigingenregister</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     
-                     <p>Registratie binnen de grenzen van DSO-LV</p>
-                     
-                     </td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-10">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_InternMachtigingenregister" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Intern machtigingenregister
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
-                     
-                     </td>
-                  <td>
-                     
-                     <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor
-                        afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee
-                        machtigingen kunnen worden gecontroleerd op geldigheid.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      </section>
-   <section id="enumeraties">
-      <div class="header-wrapper"><h3 id="x5-3-enumeraties"><bdi class="secno">5.3 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.3"></a></div>
-      
-      <table style="width: 100%;">
-         <colgroup style="width: 30%;"></colgroup>
-         <colgroup style="width: 70%;"></colgroup>
-         <tbody>
-            <tr>
-               <th><a class="link" href="#detail_class_CIMMAC_Machtiningsoort">Machtiningsoort</a></th>
-               <td>
+  <section id="cat" class="normative"><div class="header-wrapper"><h2 id="x5-gegevensdefinitie"><bdi class="secno">5. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 5."></a></div><section id="EAID_E978A52A_7801_4b47_9E3E_E67A041827AB"><div class="header-wrapper"><h3 id="x5-1-cim-mac-overzicht"><bdi class="secno">5.1 </bdi>   CIM-MAC - overzicht</h3><a class="self-link" href="#EAID_E978A52A_7801_4b47_9E3E_E67A041827AB" aria-label="Permalink for Section 5.1"></a></div><div class="imageinfo overview"><figure class="uml-diagram" id="fig-diagram-cim-mac"><img id="EAID_E978A52A_7801_4b47_9E3E_E67A041827AB" src="data/Images/EAID_E978A52A_7801_4b47_9E3E_E67A041827AB.png" usemap="#imagemap-EAID_E978A52A_7801_4b47_9E3E_E67A041827AB" alt="Diagram: Dit conceptuele informatiemodel (CIM) heeft betrekking op machtingen. Hieronder verstaan we het toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de gemachtigde."><figcaption><a class="self-link" href="#fig-diagram-cim-mac">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title"> ‒ Diagram: CIM-MAC</span></figcaption></figure><map name="imagemap-EAID_E978A52A_7801_4b47_9E3E_E67A041827AB"><area shape="rect" alt="Actor" coords="725,862,900,1037" href="#global_class_CIMMAC_Actor"><area shape="rect" alt="Niet-natuurlijk persoon" coords="1313,451,1450,561" href="#global_class_CIMMAC_Nietnatuurlijkpersoon"><area shape="rect" alt="Natuurlijk persoon" coords="1135,451,1272,561" href="#global_class_CIMMAC_Natuurlijkpersoon"><area shape="rect" alt="Machtigingsobject" coords="96,479,343,588" href="#global_class_CIMMAC_Machtigingsobject"><area shape="rect" alt="Machtigingssubject" coords="1218,233,1354,342" href="#global_class_CIMMAC_Machtigingssubject"><area shape="rect" alt="Intern machtigingenregister" coords="82,14,233,123" href="#global_class_CIMMAC_Internmachtigingenregister"><area shape="rect" alt="Extern machtigingenregister" coords="793,14,944,123" href="#global_class_CIMMAC_Externmachtigingenregister"><area shape="rect" alt="Recht" coords="14,862,278,1037" href="#global_class_CIMMAC_Recht"><area shape="rect" alt="Gemachtigde" coords="917,178,1053,287" href="#global_class_CIMMAC_Gemachtigde"><area shape="rect" alt="Machtigingsverlener" coords="917,301,1053,410" href="#global_class_CIMMAC_Machtigingsverlener"><area shape="rect" alt="Machtigingtype" coords="561,862,698,984" href="#global_class_CIMMAC_Machtigingtype"><area shape="rect" alt="Machtiningsoort" coords="301,862,535,1019" href="#global_class_CIMMAC_Machtiningsoort"><area shape="rect" alt="Bevoedgheid" coords="397,479,654,588" href="#global_class_CIMMAC_Bevoedgheid"><area shape="rect" alt="Machtiging" coords="397,205,644,380" href="#global_class_CIMMAC_Machtiging"><area shape="rect" alt="Dienstmachtiging" coords="260,713,397,822" href="#global_class_CIMMAC_Dienstmachtiging"><area shape="rect" alt="Machtigingregister" coords="451,14,588,123" href="#global_class_CIMMAC_Machtigingregister"><area shape="rect" alt="Zaakmachtiging" coords="27,713,235,822" href="#global_class_CIMMAC_Zaakmachtiging"></map><p>
+                        </p><p>Dit conceptuele informatiemodel (CIM) heeft betrekking op machtingen. Hieronder verstaan we het toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de gemachtigde.</p>
+                     <p></p></div></section><section id="objecttypen"><div class="header-wrapper"><h3 id="x5-2-objecttypen"><bdi class="secno">5.2 </bdi>Objecttypen   </h3><a class="self-link" href="#objecttypen" aria-label="Permalink for Section 5.2"></a></div>
+            <section id="global_class_CIMMAC_Natuurlijkpersoon"><div class="header-wrapper"><h4 id="x5-2-1-natuurlijk-persoon"><bdi class="secno">5.2.1 </bdi>   Natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_Natuurlijkpersoon" aria-label="Permalink for Section 5.2.1"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Natuurlijk persoon</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Een natuurlijk persoon is een menselijk individu dat, behoudens gebleken handelingsonbekwaamheid, in juridische zin drager van rechten en verplichtingen is.</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Natuurlijkpersoon" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Definieert verschillende machtingsoorten.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th><a class="link" href="#detail_class_CIMMAC_Recht">Recht</a></th>
-               <td>
-                  
-                  <p>Definieert rechten die kunnen worden gekoppeld aan een bevoegdheid.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th><a class="link" href="#detail_class_CIMMAC_Actor">Actor</a></th>
-               <td>
-                  
-                  <p>Definieert verschillende type machtingen.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th><a class="link" href="#detail_class_CIMMAC_Machtigingtype">Machtigingtype</a></th>
-               <td>
-                  
-                  <p>Definieert verschillende type machtigingen.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="attribuut-en-relatiesoort-details">
-      <div class="header-wrapper"><h3 id="x5-4-attribuut-en-relatiesoort-details"><bdi class="secno">5.4 </bdi>Attribuut- en relatiesoort details  </h3><a class="self-link" href="#attribuut-en-relatiesoort-details" aria-label="Permalink for Section 5.4"></a></div>
-      
-      <section id="objecttype-details">
-         <div class="header-wrapper"><h4 id="x5-4-1-objecttype-details"><bdi class="secno">5.4.1 </bdi>Objecttype details  </h4><a class="self-link" href="#objecttype-details" aria-label="Permalink for Section 5.4.1"></a></div>
-         
-         <section id="detail_class_CIMMAC_Machtigingsobject">
-            <div class="header-wrapper"><h5 id="x5-4-1-1-machtigingsobject"><bdi class="secno">5.4.1.1 </bdi>   Machtigingsobject</h5><a class="self-link" href="#detail_class_CIMMAC_Machtigingsobject" aria-label="Permalink for Section 5.4.1.1"></a></div>
-            
-            <section id="detail_attribute_CIMMAC_Machtigingsobject_identificatie">
-               <div class="header-wrapper"><h6 id="x5-4-1-1-1-attribuutsoort-details-machtigingsobject-identificatie"><bdi class="secno">5.4.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie" aria-label="Permalink for Section 5.4.1.1.1"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Natuurlijk persoon
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
+                           
+                        </td><td>
+                           <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
+                        </td></tr></tbody></table>
                
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>identificatie</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Ja</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
             </section>
-         
-         
-         <section id="detail_class_CIMMAC_Machtiging">
-            <div class="header-wrapper"><h5 id="x5-4-1-2-machtiging"><bdi class="secno">5.4.1.2 </bdi>   Machtiging</h5><a class="self-link" href="#detail_class_CIMMAC_Machtiging" aria-label="Permalink for Section 5.4.1.2"></a></div>
-            
-            <section id="detail_attribute_CIMMAC_Machtiging_geldigTot">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-1-attribuutsoort-details-machtiging-geldig-tot"><bdi class="secno">5.4.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig tot</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigTot" aria-label="Permalink for Section 5.4.1.2.1"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>geldig tot</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Date</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMMAC_Machtiging_geldigVan">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-2-attribuutsoort-details-machtiging-geldig-van"><bdi class="secno">5.4.1.2.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig van</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigVan" aria-label="Permalink for Section 5.4.1.2.2"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>geldig van</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Date</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMMAC_Machtiging_identificatie">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-3-attribuutsoort-details-machtiging-identificatie"><bdi class="secno">5.4.1.2.3 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_identificatie" aria-label="Permalink for Section 5.4.1.2.3"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>identificatie</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Ja</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMMAC_Machtiging_soort">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-4-attribuutsoort-details-machtiging-soort"><bdi class="secno">5.4.1.2.4 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> soort</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_soort" aria-label="Permalink for Section 5.4.1.2.4"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>soort</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMMAC_Machtiningsoort">Machtiningsoort</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMMAC_Machtiging_type">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-5-attribuutsoort-details-machtiging-type"><bdi class="secno">5.4.1.2.5 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> type</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_type" aria-label="Permalink for Section 5.4.1.2.5"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>type</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMMAC_Machtigingtype">Machtigingtype</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMMAC_Machtiging_geeft">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-6-relatiesoort-details-machtiging-geeft"><bdi class="secno">5.4.1.2.6 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geeft</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geeft" aria-label="Permalink for Section 5.4.1.2.6"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>geeft</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-7-relatiesoort-details-machtiging-krijgt-bevoegdheden-overgedragen"><bdi class="secno">5.4.1.2.7 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> krijgt bevoegdheden overgedragen</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_krijgtBevoegdhedenOvergedragen" aria-label="Permalink for Section 5.4.1.2.7"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>krijgt bevoegdheden overgedragen</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMMAC_Gemachtigde">Gemachtigde</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1 .. *</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMMAC_Machtiging_heeftBetrekkingOp">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-8-relatiesoort-details-machtiging-heeft-betrekking-op"><bdi class="secno">5.4.1.2.8 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> heeft betrekking op</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_heeftBetrekkingOp" aria-label="Permalink for Section 5.4.1.2.8"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>heeft betrekking op</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMMAC_Machtiging_geregistreerdIn">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-9-relatiesoort-details-machtiging-geregistreerd-in"><bdi class="secno">5.4.1.2.9 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geregistreerd in</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geregistreerdIn" aria-label="Permalink for Section 5.4.1.2.9"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>geregistreerd in</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver">
-               <div class="header-wrapper"><h6 id="x5-4-1-2-10-relatiesoort-details-machtiging-draagt-bevoegdheden-over"><bdi class="secno">5.4.1.2.10 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> draagt bevoegdheden over</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_draagtBevoegdhedenOver" aria-label="Permalink for Section 5.4.1.2.10"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>draagt bevoegdheden over</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMMAC_Machtigingsverlener">Machtigingsverlener</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
+            <section id="global_class_CIMMAC_Bevoegdheidsverklaring"><div class="header-wrapper"><h4 id="x5-2-2-bevoegdheidsverklaring"><bdi class="secno">5.2.2 </bdi>   Bevoegdheidsverklaring</h4><a class="self-link" href="#global_class_CIMMAC_Bevoegdheidsverklaring" aria-label="Permalink for Section 5.2.2"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Bevoegdheidsverklaring</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
             </section>
-         
-         
-         <section id="detail_class_CIMMAC_Machtigingssubject">
-            <div class="header-wrapper"><h5 id="x5-4-1-3-machtigingssubject"><bdi class="secno">5.4.1.3 </bdi>   Machtigingssubject</h5><a class="self-link" href="#detail_class_CIMMAC_Machtigingssubject" aria-label="Permalink for Section 5.4.1.3"></a></div>
-            
-            <section id="detail_attribute_CIMMAC_Machtigingssubject_actor">
-               <div class="header-wrapper"><h6 id="x5-4-1-3-1-attribuutsoort-details-machtigingssubject-actor"><bdi class="secno">5.4.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a> actor</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingssubject_actor" aria-label="Permalink for Section 5.4.1.3.1"></a></div>
+            <section id="global_class_CIMMAC_Externmachtigingenregister"><div class="header-wrapper"><h4 id="x5-2-3-extern-machtigingenregister"><bdi class="secno">5.2.3 </bdi>   Extern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_Externmachtigingenregister" aria-label="Permalink for Section 5.2.3"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Extern machtigingenregister</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Registratie binnen de e­Overheid</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Externmachtigingenregister" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Extern machtigingenregister
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
+                           
+                        </td><td>
+                           <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee machtigingen kunnen worden gecontroleerd op geldigheid.</p>
+                        </td></tr></tbody></table>
                
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>actor</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMMAC_Actor">Actor</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
             </section>
-         
-         <section id="detail_class_CIMMAC_Zaakmachtiging">
-            <div class="header-wrapper"><h5 id="x5-4-1-4-zaakmachtiging"><bdi class="secno">5.4.1.4 </bdi>   Zaakmachtiging</h5><a class="self-link" href="#detail_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for Section 5.4.1.4"></a></div>
-            
-            <section id="detail_attribute_CIMMAC_Zaakmachtiging_projectId">
-               <div class="header-wrapper"><h6 id="x5-4-1-4-1-attribuutsoort-details-zaakmachtiging-project-id"><bdi class="secno">5.4.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Zaakmachtiging">Zaakmachtiging</a> project-id</h6><a class="self-link" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectId" aria-label="Permalink for Section 5.4.1.4.1"></a></div>
+            <section id="global_class_CIMMAC_Machtigingsobject"><div class="header-wrapper"><h4 id="x5-2-4-machtigingsobject"><bdi class="secno">5.2.4 </bdi>   Machtigingsobject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for Section 5.2.4"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Machtigingsobject</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert de scope van de machtiging</p>
+                           
+                     </td></tr><tr><th>Unieke aanduiding</th><td>identificatie</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsobject" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie">identificatie</a>
+                        </td><td></td><td>
+                           CHARACTERSTRING
+                        </td><td>1</td></tr></tbody></table>
                
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>project-id</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
             </section>
-         
-         
-         
-         
-         <section id="detail_class_CIMMAC_Bevoedgheid">
-            <div class="header-wrapper"><h5 id="x5-4-1-5-bevoedgheid"><bdi class="secno">5.4.1.5 </bdi>   Bevoedgheid</h5><a class="self-link" href="#detail_class_CIMMAC_Bevoedgheid" aria-label="Permalink for Section 5.4.1.5"></a></div>
-            
-            <section id="detail_attribute_CIMMAC_Bevoedgheid_rechten">
-               <div class="header-wrapper"><h6 id="x5-4-1-5-1-attribuutsoort-details-bevoedgheid-rechten"><bdi class="secno">5.4.1.5.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a> rechten</h6><a class="self-link" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten" aria-label="Permalink for Section 5.4.1.5.1"></a></div>
+            <section id="global_class_CIMMAC_Nietnatuurlijkpersoon"><div class="header-wrapper"><h4 id="x5-2-5-niet-natuurlijk-persoon"><bdi class="secno">5.2.5 </bdi>   Niet-natuurlijk persoon</h4><a class="self-link" href="#global_class_CIMMAC_Nietnatuurlijkpersoon" aria-label="Permalink for Section 5.2.5"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Niet-natuurlijk persoon</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. </p>
+                              <p>Een samenwerkingsverband zonder rechtspersoonlijkheid is een rechtsvorm behorend bij een georganiseerde groep van natuurlijke personen en/of rechtspersonen die zelf niet in het recht is erkend als drager van wettelijke rechten en plichten.
+Voorbeelden van samenwerkingsverbanden zonder rechtspersoonlijkheid zijn de maatschap, de vennootschap onder firma (vof) en de commanditaire vennootschap (cv).</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Nietnatuurlijkpersoon" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Niet-natuurlijk persoon
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
+                           
+                        </td><td>
+                           <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
+                        </td></tr></tbody></table>
                
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>rechten</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMMAC_Recht">Recht</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1 .. *</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
             </section>
-         
-         </section>
-      
-      
-      
-      
-      
-      </section>
-</section>
-<section id="lis" class="normative">
-   <div class="header-wrapper"><h2 id="x6-inhoud-van-waardenlijsten"><bdi class="secno">6. </bdi>Inhoud van waardenlijsten</h2><a class="self-link" href="#lis" aria-label="Permalink for Section 6."></a></div>
-   
-   <section id="detail_class_CIMMAC_Machtiningsoort">
-      <div class="header-wrapper"><h3 id="x6-1-enumeratie-details-machtiningsoort"><bdi class="secno">6.1 </bdi>Enumeratie details  Machtiningsoort</h3><a class="self-link" href="#detail_class_CIMMAC_Machtiningsoort" aria-label="Permalink for Section 6.1"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
+            <section id="global_class_CIMMAC_Machtiging"><div class="header-wrapper"><h4 id="x5-2-6-machtiging"><bdi class="secno">5.2.6 </bdi>   Machtiging</h4><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for Section 5.2.6"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Machtiging</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Toekennen of overdragen van bevoegdheden van de machtigingsverlener naar de gemachtigde</p>
+                           
+                     </td></tr><tr><th>Unieke aanduiding</th><td>identificatie</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtiging_geldigtot">geldig tot</a>
+                        </td><td></td><td>
+                           DATE
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtiging_geldigvan">geldig van</a>
+                        </td><td></td><td>
+                           DATE
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtiging_identificatie">identificatie</a>
+                        </td><td></td><td>
+                           CHARACTERSTRING
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtiging_soort">soort</a>
+                        </td><td></td><td>
+                           <a class="link" href="#global_class_CIMMAC_Machtiningsoort">Machtiningsoort</a>
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtiging_type">type</a>
+                        </td><td></td><td>
+                           <a class="link" href="#global_class_CIMMAC_Machtigingtype">Machtigingtype</a>
+                        </td><td>1</td></tr></tbody></table>
+               
+               <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtiging" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Definieert verschillende machtingsoorten.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 40%;"></colgroup>
-         <colgroup style="width: 60%;"></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <th>nabestaandemachtiging</th>
-               <td>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Machtiging
+                           [ 1 ]
+                           
+                              <a class="link" href="#detail_association_CIMMAC_Machtiging_geeft">geeft</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr><tr><td>
+                           Machtiging
+                           [ 1 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMMAC_Machtiging_krijgtbevoegdhedenovergedragen">krijgt bevoegdheden overgedragen</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMMAC_Gemachtigde">Gemachtigde</a>
+                           
+                           [ 1 .. * ]
+                        </td><td></td></tr><tr><td>
+                           Machtiging
+                           [ 1 ]
+                           
+                              <a class="link" href="#detail_association_CIMMAC_Machtiging_heeftbetrekkingop">heeft betrekking op</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr><tr><td>
+                           Machtiging
+                           [ 1 ]
+                           
+                              <a class="link" href="#detail_association_CIMMAC_Machtiging_geregistreerdin">geregistreerd in</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr><tr><td>
+                           Machtiging
+                           [ 1 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMMAC_Machtiging_draagtbevoegdhedenover">draagt bevoegdheden over</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsverlener">Machtigingsverlener</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Machtigingsverlener"><div class="header-wrapper"><h4 id="x5-2-7-machtigingsverlener"><bdi class="secno">5.2.7 </bdi>   Machtigingsverlener</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for Section 5.2.7"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Machtigingsverlener</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Degene die bevoegdheden overdraagt</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingsverlener" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Na overlijden de handelingsbevoegdheid van de erven</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>ouderlijk gezag</th>
-               <td>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Machtigingsverlener
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
+                           
+                        </td><td>
+                           <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
+                        </td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Machtigingssubject"><div class="header-wrapper"><h4 id="x5-2-8-machtigingssubject"><bdi class="secno">5.2.8 </bdi>   Machtigingssubject</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for Section 5.2.8"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Machtigingssubject</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Machtigingssubject" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Machtigingssubject_actor">actor</a>
+                        </td><td></td><td>
+                           <a class="link" href="#global_class_CIMMAC_Actor">Actor</a>
+                        </td><td>1</td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Zaakmachtiging"><div class="header-wrapper"><h4 id="x5-2-9-zaakmachtiging"><bdi class="secno">5.2.9 </bdi>   Zaakmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for Section 5.2.9"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Zaakmachtiging</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Een enkelvoudig proces of processtap (bezwaar, case management)</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectid">project-id</a>
+                        </td><td></td><td>
+                           CHARACTERSTRING
+                        </td><td>1</td></tr></tbody></table>
+               
+               <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Op basis van wet de bevoegdheid van ouders om voor hun kinderen te handelen.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>vrrijwillige machtiging</th>
-               <td>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Zaakmachtiging
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
+                           
+                        </td><td>
+                           <p>Definieert de scope van de machtiging</p>
+                        </td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Gemachtigde"><div class="header-wrapper"><h4 id="x5-2-10-gemachtigde"><bdi class="secno">5.2.10 </bdi>   Gemachtigde</h4><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for Section 5.2.10"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Gemachtigde</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Degene die in de plaats van de machtigingsverlener namens diegene handelt</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Gemachtigde" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Zonder (wettelijke) dwang overdragen van bevoegdheden, vaak met rechtsgevolgen</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>wettelijke vertegenwoordiging</th>
-               <td>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Gemachtigde
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a>
+                           
+                        </td><td>
+                           <p>De persoon of organisatie (rechtspersoon) die het betreft.</p>
+                        </td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Dienstmachtiging"><div class="header-wrapper"><h4 id="x5-2-11-dienstmachtiging"><bdi class="secno">5.2.11 </bdi>   Dienstmachtiging</h4><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for Section 5.2.11"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Dienstmachtiging</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Onveranderlijke set van activiteiten met een eindresultaat</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Dienstmachtiging" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Op basis van regelgeving toegekend krijgen van bevoegdheden zoals een bestuurder van
-                     een onderneming in het Handelsregister</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_CIMMAC_Recht">
-      <div class="header-wrapper"><h3 id="x6-2-enumeratie-details-recht"><bdi class="secno">6.2 </bdi>Enumeratie details  Recht</h3><a class="self-link" href="#detail_class_CIMMAC_Recht" aria-label="Permalink for Section 6.2"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Dienstmachtiging
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
+                           
+                        </td><td>
+                           <p>Definieert de scope van de machtiging</p>
+                        </td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Machtigingregister"><div class="header-wrapper"><h4 id="x5-2-12-machtigingregister"><bdi class="secno">5.2.12 </bdi>   Machtigingregister</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingregister" aria-label="Permalink for Section 5.2.12"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Machtigingregister</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee machtigingen kunnen worden gecontroleerd op geldigheid.</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="global_class_CIMMAC_Bevoedgheid"><div class="header-wrapper"><h4 id="x5-2-13-bevoedgheid"><bdi class="secno">5.2.13 </bdi>   Bevoedgheid</h4><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for Section 5.2.13"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Bevoedgheid</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert de bevoegdheid die voorkomt uit de machtiging.</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-3">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMMAC_Bevoedgheid" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten">rechten</a>
+                        </td><td></td><td>
+                           <a class="link" href="#global_class_CIMMAC_Recht">Recht</a>
+                        </td><td>1 .. *</td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMMAC_Internmachtigingenregister"><div class="header-wrapper"><h4 id="x5-2-14-intern-machtigingenregister"><bdi class="secno">5.2.14 </bdi>   Intern machtigingenregister</h4><a class="self-link" href="#global_class_CIMMAC_Internmachtigingenregister" aria-label="Permalink for Section 5.2.14"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Intern machtigingenregister</td></tr><tr><th>Definitie</th><td>
+                        
+                              <p>Registratie binnen de grenzen van DSO-LV</p>
+                           
+                     </td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMMAC_Internmachtigingenregister" aria-label="Permalink for this Section"></a></div>
                   
-                  <p>Definieert rechten die kunnen worden gekoppeld aan een bevoegdheid.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 40%;"></colgroup>
-         <colgroup style="width: 60%;"></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <th>bekijken</th>
-               <td>
-                  
-                  <p>De inhoud van een projectmap bekijken</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>indienen</th>
-               <td>
-                  
-                  <p>Het verzoek indienen (handeling met rechtsgevolgen)</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>machtigingen verlenen of intrekken</th>
-               <td>
-                  
-                  <p>De machtigingsverlening zelf doorgeven</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>opstellen</th>
-               <td>
-                  
-                  <p>De  inhoud van een projectmap aanvullen en formulieren invullen</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>rechten toekennen</th>
-               <td>
-                  
-                  <p>De machtiging wijzigen</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_CIMMAC_Actor">
-      <div class="header-wrapper"><h3 id="x6-3-enumeratie-details-actor"><bdi class="secno">6.3 </bdi>Enumeratie details  Actor</h3><a class="self-link" href="#detail_class_CIMMAC_Actor" aria-label="Permalink for Section 6.3"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>Definieert verschillende type machtingen.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 40%;"></colgroup>
-         <colgroup style="width: 60%;"></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <th>bestuurder</th>
-               <td>
-                  
-                  <p>Bestuurder van een organisatie.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>burger</th>
-               <td>
-                  
-                  <p>Een individuele burger.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>medewerker</th>
-               <td>
-                  
-                  <p>Een medewerker van een organisatie.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>organisatie</th>
-               <td>
-                  
-                  <p>Een private organisatie.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>overheidsorganisatie</th>
-               <td>
-                  
-                  <p>Een (publieke) overheidsorganisatie.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_CIMMAC_Machtigingtype">
-      <div class="header-wrapper"><h3 id="x6-4-enumeratie-details-machtigingtype"><bdi class="secno">6.4 </bdi>Enumeratie details  Machtigingtype</h3><a class="self-link" href="#detail_class_CIMMAC_Machtigingtype" aria-label="Permalink for Section 6.4"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>Definieert verschillende type machtigingen.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 40%;"></colgroup>
-         <colgroup style="width: 60%;"></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <th>enkelvoudig</th>
-               <td>
-                  
-                  <p>De machtiging is alleen voor de gemachtigde en daar stopt de machtigingsverlening</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>keten</th>
-               <td>
-                  
-                  <p>Een recursieve machtiging waarbij een gemachtigde de machtging heeft om zijn machtiging
-                     door te geven aan een volgende gemachtigde.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-</section>
-
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Intern machtigingenregister
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
+                           
+                        </td><td>
+                           <p>Registratie waarin machtigingen worden beheerd en beschikbaar worden gesteld voor afnemers. Hieronder valt ook de zogenaamde bevoegdheidsverklaring. Een dienst waarmee machtigingen kunnen worden gecontroleerd op geldigheid.</p>
+                        </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="enumeraties"><div class="header-wrapper"><h3 id="x5-3-enumeraties"><bdi class="secno">5.3 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.3"></a></div>
+            <section id="global_class_CIMMAC_Machtiningsoort"><div class="header-wrapper"><h4 id="x5-3-1-enumeratie-machtiningsoort"><bdi class="secno">5.3.1 </bdi>Enumeratie   Machtiningsoort</h4><a class="self-link" href="#global_class_CIMMAC_Machtiningsoort" aria-label="Permalink for Section 5.3.1"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert verschillende machtingsoorten.</p>
+                           
+                     </td></tr></tbody></table>
+            </section>
+            <section id="global_class_CIMMAC_Recht"><div class="header-wrapper"><h4 id="x5-3-2-enumeratie-recht"><bdi class="secno">5.3.2 </bdi>Enumeratie   Recht</h4><a class="self-link" href="#global_class_CIMMAC_Recht" aria-label="Permalink for Section 5.3.2"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert rechten die kunnen worden gekoppeld aan een bevoegdheid.</p>
+                           
+                     </td></tr></tbody></table>
+            </section>
+            <section id="global_class_CIMMAC_Actor"><div class="header-wrapper"><h4 id="x5-3-3-enumeratie-actor"><bdi class="secno">5.3.3 </bdi>Enumeratie   Actor</h4><a class="self-link" href="#global_class_CIMMAC_Actor" aria-label="Permalink for Section 5.3.3"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert verschillende type machtingen.</p>
+                           
+                     </td></tr></tbody></table>
+            </section>
+            <section id="global_class_CIMMAC_Machtigingtype"><div class="header-wrapper"><h4 id="x5-3-4-enumeratie-machtigingtype"><bdi class="secno">5.3.4 </bdi>Enumeratie   Machtigingtype</h4><a class="self-link" href="#global_class_CIMMAC_Machtigingtype" aria-label="Permalink for Section 5.3.4"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Definitie</th><td>
+                        
+                              <p>Definieert verschillende type machtigingen.</p>
+                           
+                     </td></tr></tbody></table>
+            </section>
+         </section><section id="attribuut-en-relatiesoort-details"><div class="header-wrapper"><h3 id="x5-4-attribuut-en-relatiesoort-details"><bdi class="secno">5.4 </bdi>Attribuut- en relatiesoort details  </h3><a class="self-link" href="#attribuut-en-relatiesoort-details" aria-label="Permalink for Section 5.4"></a></div>
+            <section id="objecttype-details"><div class="header-wrapper"><h4 id="x5-4-1-objecttype-details"><bdi class="secno">5.4.1 </bdi>Objecttype details  </h4><a class="self-link" href="#objecttype-details" aria-label="Permalink for Section 5.4.1"></a></div>
+               <section id="detail_class_CIMMAC_Machtigingsobject"><div class="header-wrapper"><h5 id="x5-4-1-1-machtigingsobject"><bdi class="secno">5.4.1.1 </bdi>   Machtigingsobject</h5><a class="self-link" href="#detail_class_CIMMAC_Machtigingsobject" aria-label="Permalink for Section 5.4.1.1"></a></div>
+                  <section id="detail_attribute_CIMMAC_Machtigingsobject_identificatie"><div class="header-wrapper"><h6 id="x5-4-1-1-1-attribuutsoort-details-machtigingsobject-identificatie"><bdi class="secno">5.4.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingsobject_identificatie" aria-label="Permalink for Section 5.4.1.1.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>identificatie</td></tr><tr><th>Formaat</th><td>CHARACTERSTRING</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Ja</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               <section id="detail_class_CIMMAC_Machtiging"><div class="header-wrapper"><h5 id="x5-4-1-2-machtiging"><bdi class="secno">5.4.1.2 </bdi>   Machtiging</h5><a class="self-link" href="#detail_class_CIMMAC_Machtiging" aria-label="Permalink for Section 5.4.1.2"></a></div>
+                  <section id="detail_attribute_CIMMAC_Machtiging_geldigtot"><div class="header-wrapper"><h6 id="x5-4-1-2-1-attribuutsoort-details-machtiging-geldig-tot"><bdi class="secno">5.4.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig tot</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigtot" aria-label="Permalink for Section 5.4.1.2.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>geldig tot</td></tr><tr><th>Formaat</th><td>DATE</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMMAC_Machtiging_geldigvan"><div class="header-wrapper"><h6 id="x5-4-1-2-2-attribuutsoort-details-machtiging-geldig-van"><bdi class="secno">5.4.1.2.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geldig van</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_geldigvan" aria-label="Permalink for Section 5.4.1.2.2"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>geldig van</td></tr><tr><th>Formaat</th><td>DATE</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMMAC_Machtiging_identificatie"><div class="header-wrapper"><h6 id="x5-4-1-2-3-attribuutsoort-details-machtiging-identificatie"><bdi class="secno">5.4.1.2.3 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_identificatie" aria-label="Permalink for Section 5.4.1.2.3"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>identificatie</td></tr><tr><th>Formaat</th><td>CHARACTERSTRING</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Ja</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMMAC_Machtiging_soort"><div class="header-wrapper"><h6 id="x5-4-1-2-4-attribuutsoort-details-machtiging-soort"><bdi class="secno">5.4.1.2.4 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> soort</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_soort" aria-label="Permalink for Section 5.4.1.2.4"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>soort</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMMAC_Machtiningsoort">Machtiningsoort</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMMAC_Machtiging_type"><div class="header-wrapper"><h6 id="x5-4-1-2-5-attribuutsoort-details-machtiging-type"><bdi class="secno">5.4.1.2.5 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> type</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtiging_type" aria-label="Permalink for Section 5.4.1.2.5"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>type</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMMAC_Machtigingtype">Machtigingtype</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMMAC_Machtiging_geeft"><div class="header-wrapper"><h6 id="x5-4-1-2-6-relatiesoort-details-machtiging-geeft"><bdi class="secno">5.4.1.2.6 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geeft</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geeft" aria-label="Permalink for Section 5.4.1.2.6"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>geeft</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMMAC_Machtiging_krijgtbevoegdhedenovergedragen"><div class="header-wrapper"><h6 id="x5-4-1-2-7-relatiesoort-details-machtiging-krijgt-bevoegdheden-overgedragen"><bdi class="secno">5.4.1.2.7 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> krijgt bevoegdheden overgedragen</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_krijgtbevoegdhedenovergedragen" aria-label="Permalink for Section 5.4.1.2.7"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>krijgt bevoegdheden overgedragen</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMMAC_Gemachtigde">Gemachtigde</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1 .. *</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMMAC_Machtiging_heeftbetrekkingop"><div class="header-wrapper"><h6 id="x5-4-1-2-8-relatiesoort-details-machtiging-heeft-betrekking-op"><bdi class="secno">5.4.1.2.8 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> heeft betrekking op</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_heeftbetrekkingop" aria-label="Permalink for Section 5.4.1.2.8"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>heeft betrekking op</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsobject">Machtigingsobject</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMMAC_Machtiging_geregistreerdin"><div class="header-wrapper"><h6 id="x5-4-1-2-9-relatiesoort-details-machtiging-geregistreerd-in"><bdi class="secno">5.4.1.2.9 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> geregistreerd in</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_geregistreerdin" aria-label="Permalink for Section 5.4.1.2.9"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>geregistreerd in</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMMAC_Machtigingregister">Machtigingregister</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMMAC_Machtiging_draagtbevoegdhedenover"><div class="header-wrapper"><h6 id="x5-4-1-2-10-relatiesoort-details-machtiging-draagt-bevoegdheden-over"><bdi class="secno">5.4.1.2.10 </bdi>Relatiesoort details  <a href="#global_class_CIMMAC_Machtiging">Machtiging</a> draagt bevoegdheden over</h6><a class="self-link" href="#detail_association_CIMMAC_Machtiging_draagtbevoegdhedenover" aria-label="Permalink for Section 5.4.1.2.10"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>draagt bevoegdheden over</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMMAC_Machtigingsverlener">Machtigingsverlener</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               <section id="detail_class_CIMMAC_Machtigingssubject"><div class="header-wrapper"><h5 id="x5-4-1-3-machtigingssubject"><bdi class="secno">5.4.1.3 </bdi>   Machtigingssubject</h5><a class="self-link" href="#detail_class_CIMMAC_Machtigingssubject" aria-label="Permalink for Section 5.4.1.3"></a></div>
+                  <section id="detail_attribute_CIMMAC_Machtigingssubject_actor"><div class="header-wrapper"><h6 id="x5-4-1-3-1-attribuutsoort-details-machtigingssubject-actor"><bdi class="secno">5.4.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Machtigingssubject">Machtigingssubject</a> actor</h6><a class="self-link" href="#detail_attribute_CIMMAC_Machtigingssubject_actor" aria-label="Permalink for Section 5.4.1.3.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>actor</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMMAC_Actor">Actor</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+               </section>
+               <section id="detail_class_CIMMAC_Zaakmachtiging"><div class="header-wrapper"><h5 id="x5-4-1-4-zaakmachtiging"><bdi class="secno">5.4.1.4 </bdi>   Zaakmachtiging</h5><a class="self-link" href="#detail_class_CIMMAC_Zaakmachtiging" aria-label="Permalink for Section 5.4.1.4"></a></div>
+                  <section id="detail_attribute_CIMMAC_Zaakmachtiging_projectid"><div class="header-wrapper"><h6 id="x5-4-1-4-1-attribuutsoort-details-zaakmachtiging-project-id"><bdi class="secno">5.4.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Zaakmachtiging">Zaakmachtiging</a> project-id</h6><a class="self-link" href="#detail_attribute_CIMMAC_Zaakmachtiging_projectid" aria-label="Permalink for Section 5.4.1.4.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>project-id</td></tr><tr><th>Formaat</th><td>CHARACTERSTRING</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               
+               
+               <section id="detail_class_CIMMAC_Bevoedgheid"><div class="header-wrapper"><h5 id="x5-4-1-5-bevoedgheid"><bdi class="secno">5.4.1.5 </bdi>   Bevoedgheid</h5><a class="self-link" href="#detail_class_CIMMAC_Bevoedgheid" aria-label="Permalink for Section 5.4.1.5"></a></div>
+                  <section id="detail_attribute_CIMMAC_Bevoedgheid_rechten"><div class="header-wrapper"><h6 id="x5-4-1-5-1-attribuutsoort-details-bevoedgheid-rechten"><bdi class="secno">5.4.1.5.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMMAC_Bevoedgheid">Bevoedgheid</a> rechten</h6><a class="self-link" href="#detail_attribute_CIMMAC_Bevoedgheid_rechten" aria-label="Permalink for Section 5.4.1.5.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>rechten</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMMAC_Recht">Recht</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1 .. *</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+            </section>
+            
+            
+            
+            
+            
+         </section></section><section id="lis" class="normative"><div class="header-wrapper"><h2 id="x6-inhoud-van-waardelijsten"><bdi class="secno">6. </bdi>Inhoud van waardelijsten</h2><a class="self-link" href="#lis" aria-label="Permalink for Section 6."></a></div><section id="detail_class_CIMMAC_Machtiningsoort"><div class="header-wrapper"><h3 id="x6-1-enumeratie-details-machtiningsoort"><bdi class="secno">6.1 </bdi>Enumeratie details  Machtiningsoort</h3><a class="self-link" href="#detail_class_CIMMAC_Machtiningsoort" aria-label="Permalink for Section 6.1"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     <p>Definieert verschillende machtingsoorten.</p>
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 40%;"></colgroup><colgroup style="width: 60%;"></colgroup><tbody><tr><th>Waarde</th><th>Omschrijving</th></tr><tr><th>nabestaandemachtiging</th><td>
+                     <p>Na overlijden de handelingsbevoegdheid van de erven</p>
+                  </td></tr><tr><th>ouderlijk gezag</th><td>
+                     <p>Op basis van wet de bevoegdheid van ouders om voor hun kinderen te handelen.</p>
+                  </td></tr><tr><th>vrrijwillige machtiging</th><td>
+                     <p>Zonder (wettelijke) dwang overdragen van bevoegdheden, vaak met rechtsgevolgen</p>
+                  </td></tr><tr><th>wettelijke vertegenwoordiging</th><td>
+                     <p>Op basis van regelgeving toegekend krijgen van bevoegdheden zoals een bestuurder van een onderneming in het Handelsregister</p>
+                  </td></tr></tbody></table>
+         </section><section id="detail_class_CIMMAC_Recht"><div class="header-wrapper"><h3 id="x6-2-enumeratie-details-recht"><bdi class="secno">6.2 </bdi>Enumeratie details  Recht</h3><a class="self-link" href="#detail_class_CIMMAC_Recht" aria-label="Permalink for Section 6.2"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     <p>Definieert rechten die kunnen worden gekoppeld aan een bevoegdheid.</p>
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 40%;"></colgroup><colgroup style="width: 60%;"></colgroup><tbody><tr><th>Waarde</th><th>Omschrijving</th></tr><tr><th>bekijken</th><td>
+                     <p>De inhoud van een projectmap bekijken</p>
+                  </td></tr><tr><th>indienen</th><td>
+                     <p>Het verzoek indienen (handeling met rechtsgevolgen)</p>
+                  </td></tr><tr><th>machtigingen verlenen of intrekken</th><td>
+                     <p>De machtigingsverlening zelf doorgeven</p>
+                  </td></tr><tr><th>opstellen</th><td>
+                     <p>De  inhoud van een projectmap aanvullen en formulieren invullen</p>
+                  </td></tr><tr><th>rechten toekennen</th><td>
+                     <p>De machtiging wijzigen</p>
+                  </td></tr></tbody></table>
+         </section><section id="detail_class_CIMMAC_Actor"><div class="header-wrapper"><h3 id="x6-3-enumeratie-details-actor"><bdi class="secno">6.3 </bdi>Enumeratie details  Actor</h3><a class="self-link" href="#detail_class_CIMMAC_Actor" aria-label="Permalink for Section 6.3"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     <p>Definieert verschillende type machtingen.</p>
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 40%;"></colgroup><colgroup style="width: 60%;"></colgroup><tbody><tr><th>Waarde</th><th>Omschrijving</th></tr><tr><th>bestuurder</th><td>
+                     <p>Bestuurder van een organisatie.</p>
+                  </td></tr><tr><th>burger</th><td>
+                     <p>Een individuele burger.</p>
+                  </td></tr><tr><th>medewerker</th><td>
+                     <p>Een medewerker van een organisatie.</p>
+                  </td></tr><tr><th>organisatie</th><td>
+                     <p>Een private organisatie.</p>
+                  </td></tr><tr><th>overheidsorganisatie</th><td>
+                     <p>Een (publieke) overheidsorganisatie.</p>
+                  </td></tr></tbody></table>
+         </section><section id="detail_class_CIMMAC_Machtigingtype"><div class="header-wrapper"><h3 id="x6-4-enumeratie-details-machtigingtype"><bdi class="secno">6.4 </bdi>Enumeratie details  Machtigingtype</h3><a class="self-link" href="#detail_class_CIMMAC_Machtigingtype" aria-label="Permalink for Section 6.4"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     <p>Definieert verschillende type machtigingen.</p>
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 40%;"></colgroup><colgroup style="width: 60%;"></colgroup><tbody><tr><th>Waarde</th><th>Omschrijving</th></tr><tr><th>enkelvoudig</th><td>
+                     <p>De machtiging is alleen voor de gemachtigde en daar stopt de machtigingsverlening</p>
+                  </td></tr><tr><th>keten</th><td>
+                     <p>Een recursieve machtiging waarbij een gemachtigde de machtging heeft om zijn machtiging door te geven aan een volgende gemachtigde.</p>
+                  </td></tr></tbody></table>
+         </section></section>
 
   <section id="conformance"><div class="header-wrapper"><h2 id="x7-conformiteit"><bdi class="secno">7. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"><div class="header-wrapper"><h2 id="x8-lijst-met-figuren"><bdi class="secno">8. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 8."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#Figure-CIM-Overzicht"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Overzicht van alle Conceptuele Informatiemodellen in het DSO</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-cim-mac"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">CIM-MAC</span></a>
+    <a class="tocxref" href="#fig-diagram-cim-mac"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title"> ‒ Diagram: CIM-MAC</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
@@ -2824,4 +1283,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Informatiemodel - Werkversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Informatiemodel - Werkversie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
