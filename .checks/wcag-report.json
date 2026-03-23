@@ -1,0 +1,97 @@
+[
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "color-contrast",
+    "impact": "serious",
+    "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          ".sidelabel"
+        ],
+        "html": "<div class=\"sidelabel\">Geonovum Informatiemodel - Werkversie</div>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ffffff, background color: #ff0000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "target-size",
+    "impact": "serious",
+    "description": "Ensure touch targets have sufficient size and space",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(1) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_attribute_CIMMAC_Machtiging_geldigtot\"><bdi class=\"secno\">5.4.1.2.1 </bdi>Attribuutsoort details  <span class=\"formerLink\">Machtiging</span> geldig tot</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(2) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_attribute_CIMMAC_Machtiging_geldigvan\"><bdi class=\"secno\">5.4.1.2.2 </bdi>Attribuutsoort details  <span class=\"formerLink\">Machtiging</span> geldig van</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(3) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_attribute_CIMMAC_Machtiging_identificatie\"><bdi class=\"secno\">5.4.1.2.3 </bdi>Attribuutsoort details  <span class=\"formerLink\">Machtiging</span> identificatie</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(4) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_attribute_CIMMAC_Machtiging_soort\"><bdi class=\"secno\">5.4.1.2.4 </bdi>Attribuutsoort details  <span class=\"formerLink\">Machtiging</span> soort</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(5) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_attribute_CIMMAC_Machtiging_type\"><bdi class=\"secno\">5.4.1.2.5 </bdi>Attribuutsoort details  <span class=\"formerLink\">Machtiging</span> type</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(6) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_CIMMAC_Machtiging_geeft\"><bdi class=\"secno\">5.4.1.2.6 </bdi>Relatiesoort details  <span class=\"formerLink\">Machtiging</span> geeft</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(7) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_CIMMAC_Machtiging_krijgtbevoegdhedenovergedragen\"><bdi class=\"secno\">5.4.1.2.7 </bdi>Relatiesoort details  <span class=\"formerLink\">Machtiging</span> krijgt bevoegdheden overgedragen</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(8) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_CIMMAC_Machtiging_heeftbetrekkingop\"><bdi class=\"secno\">5.4.1.2.8 </bdi>Relatiesoort details  <span class=\"formerLink\">Machtiging</span> heeft betrekking op</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(9) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_CIMMAC_Machtiging_geregistreerdin\"><bdi class=\"secno\">5.4.1.2.9 </bdi>Relatiesoort details  <span class=\"formerLink\">Machtiging</span> geregistreerd in</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
+          ".tocline:nth-child(4) > ol > .tocline > ol > .tocline:nth-child(2) > ol > .tocline:nth-child(10) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_CIMMAC_Machtiging_draagtbevoegdhedenover\"><bdi class=\"secno\">5.4.1.2.10 </bdi>Relatiesoort details  <span class=\"formerLink\">Machtiging</span> draagt bevoegdheden over</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      }
+    ]
+  }
+]
